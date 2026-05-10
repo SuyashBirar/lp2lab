@@ -1,0 +1,37 @@
+public class FibonacciProgram {
+
+    // Method to print Fibonacci series
+    public static void fibonacci(Integer n) {
+
+        Integer first = 0;
+        Integer second = 1;
+
+        System.debug(first);
+        System.debug(second);
+
+        for(Integer i = 2; i < n; i++) {
+
+            Integer next = first + second;
+
+            System.debug(next);
+
+            first = second;
+            second = next;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Integer terms = 10;
+
+FibonacciProgram.fibonacci(terms);

@@ -1,0 +1,32 @@
+public class FactorialProgram {
+
+    // Method to calculate factorial
+    public static Integer factorial(Integer n) {
+
+        Integer fact = 1;
+
+        for(Integer i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+
+        return fact;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Integer num = 5;
+
+Integer result = FactorialProgram.factorial(num);
+
+System.debug('Factorial of ' + num + ' is: ' + result);
